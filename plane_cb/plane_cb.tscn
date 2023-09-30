@@ -1,0 +1,77 @@
+[gd_scene load_steps=10 format=3 uid="uid://bgg05kjv8cb8n"]
+
+[ext_resource type="Script" path="res://plane_cb/plane_cb.gd" id="1_ga08h"]
+[ext_resource type="Texture2D" uid="uid://dduuhsjbrbw7r" path="res://assets/plane/planes_sheet.png" id="1_mjmml"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7awyp"]
+atlas = ExtResource("1_mjmml")
+region = Rect2(0, 0, 88, 73)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g053k"]
+atlas = ExtResource("1_mjmml")
+region = Rect2(88, 0, 88, 73)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mf3hl"]
+atlas = ExtResource("1_mjmml")
+region = Rect2(176, 0, 88, 73)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rmdih"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7awyp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g053k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mf3hl")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_invq1"]
+radius = 28.8507
+
+[sub_resource type="Animation" id="Animation_xgcns"]
+resource_name = "fly"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.349066, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_myhei"]
+_data = {
+"fly": SubResource("Animation_xgcns")
+}
+
+[node name="PlaneCB" type="CharacterBody2D" groups=["plane"]]
+scale = Vector2(0.75, 0.75)
+collision_mask = 8
+script = ExtResource("1_ga08h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rmdih")
+animation = &"fly"
+autoplay = "fly"
+frame_progress = 0.858423
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.999997)
+shape = SubResource("CircleShape2D_invq1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_myhei")
+}
