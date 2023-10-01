@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dp6k41tmtwvyv"]
+[gd_scene load_steps=12 format=3 uid="uid://dp6k41tmtwvyv"]
 
 [ext_resource type="Texture2D" uid="uid://lwuhriffn26w" path="res://assets/background/rocks_2.png" id="1_lvwc3"]
 [ext_resource type="Script" path="res://game/game.gd" id="1_ufmt8"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://do7dp0qdtuexe" path="res://game_over/game_over.tscn" id="5_vkoyq"]
 [ext_resource type="PackedScene" uid="uid://yne8ui7eqby1" path="res://hub/hub.tscn" id="6_0fqdh"]
 [ext_resource type="AudioStream" uid="uid://jnwwjouqgeps" path="res://assets/audio/engine.mp3" id="6_fi1l8"]
+[ext_resource type="Script" path="res://game/ground.gd" id="6_n8vgg"]
 [ext_resource type="AudioStream" uid="uid://dn8v47xmx55fe" path="res://assets/audio/game_over.wav" id="7_a7uew"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ystc"]
@@ -28,9 +29,10 @@ texture = ExtResource("1_lvwc3")
 position = Vector2(108, 606)
 
 [node name="Ground" type="StaticBody2D" parent="."]
-position = Vector2(0, 1253)
+position = Vector2(0, 1280)
 collision_layer = 8
 collision_mask = 0
+script = ExtResource("6_n8vgg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
 position = Vector2(360, 0)

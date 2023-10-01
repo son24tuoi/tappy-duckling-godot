@@ -5,6 +5,7 @@ extends Control
 
 
 func _ready():
+	GameManager.load_data()
 	high_score_label.text = str(GameManager.get_high_score())
 
 
