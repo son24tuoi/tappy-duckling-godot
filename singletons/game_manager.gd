@@ -81,22 +81,3 @@ func load_data() -> void:
 		player_data.high_score = data.player_data.high_score
 	else:
 		print("no data saved...")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

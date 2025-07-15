@@ -1,26 +1,34 @@
 [gd_scene load_steps=7 format=3 uid="uid://bg2wmvwnbowc7"]
 
-[ext_resource type="Script" path="res://scrolling_bg/scrolling_bg.gd" id="1_prgl6"]
+[ext_resource type="Script" uid="uid://drr825wnhxf26" path="res://scrolling_bg/scrolling_bg.gd" id="1_prgl6"]
 [ext_resource type="PackedScene" uid="uid://c5xdbodkxiktj" path="res://scrolling_layer/scrolling_layer.tscn" id="2_ojmsd"]
-[ext_resource type="Texture2D" uid="uid://cpbqhfoln1nae" path="res://assets/background/sky.png" id="3_3yph1"]
-[ext_resource type="Texture2D" uid="uid://d0qv3t5dqoch4" path="res://assets/background/clouds_2.png" id="4_gfjj1"]
-[ext_resource type="Texture2D" uid="uid://cjnjuh41t8y2l" path="res://assets/background/rocks_1.png" id="5_sw2ps"]
-[ext_resource type="Texture2D" uid="uid://lwuhriffn26w" path="res://assets/background/rocks_2.png" id="6_aedmp"]
+[ext_resource type="Texture2D" uid="uid://c6ck7ptiu0wpi" path="res://assets/background/1.png" id="3_ie5vp"]
+[ext_resource type="Texture2D" uid="uid://ds56p7810ecnb" path="res://assets/background/3.png" id="4_tvsf5"]
+[ext_resource type="Texture2D" uid="uid://bkbpcov4wlyan" path="res://assets/background/2.png" id="5_hqe2o"]
+[ext_resource type="Texture2D" uid="uid://cviunalqflwq3" path="res://assets/background/4.png" id="6_xrp8j"]
 
 [node name="ScrollingBg" type="ParallaxBackground"]
 script = ExtResource("1_prgl6")
 
 [node name="ScrollingLayer" parent="." instance=ExtResource("2_ojmsd")]
-texture = ExtResource("3_3yph1")
+texture = ExtResource("3_ie5vp")
+tx_x = 576.0
+tx_y = 324.0
 
 [node name="ScrollingLayer2" parent="." instance=ExtResource("2_ojmsd")]
-texture = ExtResource("4_gfjj1")
+texture = ExtResource("5_hqe2o")
 scroll_scale = 0.2
+tx_x = 576.0
+tx_y = 324.0
 
 [node name="ScrollingLayer3" parent="." instance=ExtResource("2_ojmsd")]
-texture = ExtResource("5_sw2ps")
+texture = ExtResource("4_tvsf5")
 scroll_scale = 0.5
+tx_x = 576.0
+tx_y = 324.0
 
 [node name="ScrollingLayer4" parent="." instance=ExtResource("2_ojmsd")]
-texture = ExtResource("6_aedmp")
+texture = ExtResource("6_xrp8j")
 scroll_scale = 0.7
+tx_x = 576.0
+tx_y = 324.0

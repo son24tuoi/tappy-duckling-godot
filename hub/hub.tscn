@@ -1,16 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://yne8ui7eqby1"]
 
-[ext_resource type="Script" path="res://hub/hub.gd" id="1_y82wo"]
+[ext_resource type="Script" uid="uid://daqe3aeb1i3p" path="res://hub/hub.gd" id="1_y82wo"]
 [ext_resource type="FontFile" uid="uid://cuqiqbxcw64wd" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="2_rebj1"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_eh21l"]
 font = ExtResource("2_rebj1")
 font_size = 70
-font_color = Color(0.784314, 0.243137, 0.243137, 1)
-outline_size = 3
-outline_color = Color(0.843137, 0.305882, 0.305882, 1)
-shadow_size = 2
-shadow_color = Color(0.843137, 0.305882, 0.305882, 0.176471)
+outline_size = 5
+outline_color = Color(0.866667, 0, 0.72549, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
 
 [node name="Hub" type="Control"]
 layout_mode = 3

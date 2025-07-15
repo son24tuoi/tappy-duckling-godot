@@ -5,7 +5,6 @@
 [resource]
 font = ExtResource("1_odevx")
 font_size = 60
-font_color = Color(0.784314, 0.243137, 0.243137, 1)
 outline_size = 3
 outline_color = Color(0.843137, 0.305882, 0.305882, 1)
 shadow_size = 2

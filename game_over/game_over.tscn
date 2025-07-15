@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://do7dp0qdtuexe"]
 
-[ext_resource type="Script" path="res://game_over/game_over.gd" id="1_h2btu"]
+[ext_resource type="Script" uid="uid://dlcd6ok2rng2t" path="res://game_over/game_over.gd" id="1_h2btu"]
 [ext_resource type="LabelSettings" uid="uid://r3182t62g0b7" path="res://assets/LG_48_Red.tres" id="1_htpej"]
 
 [node name="GameOver" type="Control"]

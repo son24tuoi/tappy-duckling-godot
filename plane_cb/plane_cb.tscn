@@ -1,39 +1,98 @@
-[gd_scene load_steps=10 format=3 uid="uid://bgg05kjv8cb8n"]
+[gd_scene load_steps=26 format=3 uid="uid://bgg05kjv8cb8n"]
 
-[ext_resource type="Script" path="res://plane_cb/plane_cb.gd" id="1_ga08h"]
-[ext_resource type="Texture2D" uid="uid://dduuhsjbrbw7r" path="res://assets/plane/planes_sheet.png" id="1_mjmml"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7awyp"]
-atlas = ExtResource("1_mjmml")
-region = Rect2(0, 0, 88, 73)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g053k"]
-atlas = ExtResource("1_mjmml")
-region = Rect2(88, 0, 88, 73)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mf3hl"]
-atlas = ExtResource("1_mjmml")
-region = Rect2(176, 0, 88, 73)
+[ext_resource type="Script" uid="uid://dnfiqinflxdou" path="res://plane_cb/plane_cb.gd" id="1_ga08h"]
+[ext_resource type="Texture2D" uid="uid://c0jbqyg2ujiy7" path="res://assets/cute-duckling/Characters-Character01-Fly_00.png" id="2_ix8xk"]
+[ext_resource type="Texture2D" uid="uid://b18tb5vk6sy7i" path="res://assets/cute-duckling/Characters-Character01-Fly_01.png" id="3_1aibg"]
+[ext_resource type="Texture2D" uid="uid://r6ucjeg4w0b2" path="res://assets/cute-duckling/Characters-Character01-Fly_02.png" id="4_i75ev"]
+[ext_resource type="Texture2D" uid="uid://dk4ajr4cfvawe" path="res://assets/cute-duckling/Characters-Character01-Fly_03.png" id="5_6e3m2"]
+[ext_resource type="Texture2D" uid="uid://bbswaekdr37le" path="res://assets/cute-duckling/Characters-Character01-Fly_04.png" id="6_y81w8"]
+[ext_resource type="Texture2D" uid="uid://bx7mvdgfbfixm" path="res://assets/cute-duckling/Characters-Character01-Fly_05.png" id="7_8qak1"]
+[ext_resource type="Texture2D" uid="uid://gwq0nxfqtn71" path="res://assets/cute-duckling/Characters-Character01-Fly_06.png" id="8_a863t"]
+[ext_resource type="Texture2D" uid="uid://ym4nlairjfie" path="res://assets/cute-duckling/Characters-Character01-Fly_07.png" id="9_h1011"]
+[ext_resource type="Texture2D" uid="uid://cavc51e8vhd2l" path="res://assets/cute-duckling/Characters-Character01-Fly_08.png" id="10_fnlf5"]
+[ext_resource type="Texture2D" uid="uid://cyll871jh528d" path="res://assets/cute-duckling/Characters-Character01-Fly_09.png" id="11_ujvsc"]
+[ext_resource type="Texture2D" uid="uid://b5du4tld3mf1a" path="res://assets/cute-duckling/Characters-Character01-Fly_10.png" id="12_m643m"]
+[ext_resource type="Texture2D" uid="uid://c260ury051sxb" path="res://assets/cute-duckling/Characters-Character01-Fly_11.png" id="13_cou3g"]
+[ext_resource type="Texture2D" uid="uid://bwec7n31odv53" path="res://assets/cute-duckling/Characters-Character01-Fly_12.png" id="14_syvfr"]
+[ext_resource type="Texture2D" uid="uid://dbbbdmul32ehh" path="res://assets/cute-duckling/Characters-Character01-Fly_13.png" id="15_gvb6r"]
+[ext_resource type="Texture2D" uid="uid://cjbk8vpqjclby" path="res://assets/cute-duckling/Characters-Character01-Fly_14.png" id="16_hkr86"]
+[ext_resource type="Texture2D" uid="uid://cixs3o8d0a6n" path="res://assets/cute-duckling/Characters-Character01-Fly_15.png" id="17_qtabk"]
+[ext_resource type="Texture2D" uid="uid://bqymawji6c0kh" path="res://assets/cute-duckling/Characters-Character01-Fly_16.png" id="18_hsu1p"]
+[ext_resource type="Texture2D" uid="uid://djxfbbciufqy8" path="res://assets/cute-duckling/Characters-Character01-Fly_17.png" id="19_l0okv"]
+[ext_resource type="Texture2D" uid="uid://gm51mq1dtuyt" path="res://assets/cute-duckling/Characters-Character01-Fly_18.png" id="20_hf6hh"]
+[ext_resource type="Texture2D" uid="uid://cegmslfo17x52" path="res://assets/cute-duckling/Characters-Character01-Fly_19.png" id="21_ry1s6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rmdih"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7awyp")
+"texture": ExtResource("2_ix8xk")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_g053k")
+"texture": ExtResource("3_1aibg")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mf3hl")
+"texture": ExtResource("4_i75ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6e3m2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_y81w8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8qak1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_a863t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_h1011")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_fnlf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ujvsc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_m643m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_cou3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_syvfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_gvb6r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hkr86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_qtabk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_hsu1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_l0okv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_hf6hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ry1s6")
 }],
 "loop": true,
 "name": &"fly",
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_invq1"]
-radius = 28.8507
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_njfvp"]
+radius = 26.6667
+height = 80.0
 
 [sub_resource type="Animation" id="Animation_xgcns"]
 resource_name = "fly"
@@ -53,7 +112,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_myhei"]
 _data = {
-"fly": SubResource("Animation_xgcns")
+&"fly": SubResource("Animation_xgcns")
 }
 
 [node name="PlaneCB" type="CharacterBody2D" groups=["plane"]]
@@ -62,16 +121,20 @@ collision_mask = 8
 script = ExtResource("1_ga08h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 2
+position = Vector2(34.6667, -20)
+scale = Vector2(0.458945, 0.428571)
 sprite_frames = SubResource("SpriteFrames_rmdih")
 animation = &"fly"
 autoplay = "fly"
-frame_progress = 0.858423
+frame_progress = 0.561405
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, -0.999997)
-shape = SubResource("CircleShape2D_invq1")
+z_index = 2
+position = Vector2(-1.33333, 12)
+shape = SubResource("CapsuleShape2D_njfvp")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_myhei")
+&"": SubResource("AnimationLibrary_myhei")
 }

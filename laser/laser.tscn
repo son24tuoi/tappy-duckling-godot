@@ -1,89 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://do0k7jx3bsanp"]
-
-[ext_resource type="Texture2D" uid="uid://dwssy0cs06m8m" path="res://assets/pipes/laser2.png" id="1_btmkv"]
+[gd_scene load_steps=2 format=3 uid="uid://do0k7jx3bsanp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_amc2k"]
 size = Vector2(16, 192)
 
-[sub_resource type="Animation" id="Animation_ikxkb"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite2D:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 8)]
-}
-
-[sub_resource type="Animation" id="Animation_p7ema"]
-resource_name = "flash"
-length = 0.7
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:self_modulate")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_q34xg"]
-resource_name = "sc"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 8), Vector2(1, 8)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_hsxj8"]
-_data = {
-"RESET": SubResource("Animation_ikxkb"),
-"flash": SubResource("Animation_p7ema"),
-"sc": SubResource("Animation_q34xg")
-}
-
 [node name="Laser" type="Area2D"]
 collision_layer = 4
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(1, 8)
-texture = ExtResource("1_btmkv")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(54, 0)
+position = Vector2(30, 0)
 shape = SubResource("RectangleShape2D_amc2k")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "flash"
-libraries = {
-"": SubResource("AnimationLibrary_hsxj8")
-}

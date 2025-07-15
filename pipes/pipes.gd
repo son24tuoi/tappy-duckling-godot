@@ -1,7 +1,7 @@
 extends Node2D
 
 
-const SCROLL_SPEED: float = 120.0
+const SCROLL_SPEED: float = 160.0
 
 
 @onready var score_sound = $ScoreSound
